@@ -1,0 +1,5 @@
+reagent_name=input("Реактив: ")
+reagent_count=input("Количество: ")
+f = open("inventory.txt", "w", encoding="utf-8")
+print(f"  \nРеактив {reagent_name} поступил на склад в количестве {reagent_count} шт", file=f)
+f.close()
