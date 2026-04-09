@@ -1,0 +1,9 @@
+ready4evo@DESKTOP-L6R1VTV:~$ cd linux-practice
+ready4evo@DESKTOP-L6R1VTV:~/linux-practice$ du -h --max-depth=2 ./
+4.0K    ./documents/past
+4.0K    ./documents/future
+12K     ./documents
+4.0K    ./images
+4.0K    ./backups
+24K     ./
+ready4evo@DESKTOP-L6R1VTV:~/linux-practice$
