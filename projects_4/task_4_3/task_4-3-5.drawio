@@ -1,0 +1,83 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" version="29.6.6">
+  <diagram name="Страница-1" id="cSf__kAZR4cmcuLxyC43">
+    <mxGraphModel dx="1360" dy="815" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="start" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=20;" value="Начало" vertex="1">
+          <mxGeometry height="70" width="120" x="350" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="inputArray" parent="1" style="parallelogram;whiteSpace=wrap;html=1;fontSize=20;" value="Ввод n, A[1..n]" vertex="1">
+          <mxGeometry height="50" width="200" x="310" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="init" parent="1" style="rectangle;whiteSpace=wrap;html=1;fontSize=20;" value="sum = 0 count = 0&lt;br&gt;i = 0" vertex="1">
+          <mxGeometry height="60" width="220" x="300" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="2ExxgsovMbtAhxk2Rl_X-1" edge="1" parent="1" source="conditionLoop" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="calcAverage">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conditionLoop" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=20;" value="i &amp;lt;= n ?" vertex="1">
+          <mxGeometry height="80" width="140" x="340" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="processAdd" parent="1" style="rectangle;whiteSpace=wrap;html=1;fontSize=20;" value="sum = sum + A[i]&#xa;count = count + 1" vertex="1">
+          <mxGeometry height="70" width="190" x="560" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="increment" parent="1" style="rectangle;whiteSpace=wrap;html=1;fontSize=20;" value="i = i + 2" vertex="1">
+          <mxGeometry height="50" width="110" x="600" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="calcAverage" parent="1" style="rectangle;whiteSpace=wrap;html=1;fontSize=20;" value="average = sum / count" vertex="1">
+          <mxGeometry height="50" width="120" x="350" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="end" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=20;" value="Конец" vertex="1">
+          <mxGeometry height="50" width="80" x="370" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1" edge="1" parent="1" source="start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;fontSize=20;" target="inputArray">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2" edge="1" parent="1" source="inputArray" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;fontSize=20;" target="init">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3" edge="1" parent="1" source="init" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;fontSize=20;" target="conditionLoop">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge4" edge="1" parent="1" source="conditionLoop" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;fontSize=20;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="increment" value="Да">
+          <mxGeometry relative="1" x="-0.6279" y="20" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="655" y="450" />
+            </Array>
+            <mxPoint x="650" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge5" edge="1" parent="1" source="processAdd" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;fontSize=20;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="630" y="300" />
+              <mxPoint x="630" y="300" />
+            </Array>
+            <mxPoint x="410" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge9" edge="1" parent="1" source="calcAverage" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;fontSize=20;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="659.9999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge10" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;fontSize=20;" target="end">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="709.9999999999998" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fYrGX37NP8AIVCh9ynOE-4" edge="1" parent="1" source="increment" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="processAdd" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="480" y="370" as="sourcePoint" />
+            <mxPoint x="530" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fYrGX37NP8AIVCh9ynOE-5" parent="1" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;average&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="350" y="660" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
