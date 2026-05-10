@@ -1,0 +1,21 @@
+-- 1. Таблица товаров
+CREATE TABLE products (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    category VARCHAR(50)
+);
+
+-- 2. Таблица цен
+CREATE TABLE prices (
+    id SERIAL PRIMARY KEY,
+    product_id INTEGER REFERENCES products(id) ON DELETE CASCADE,
+    price NUMERIC(10,2) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- 3. Таблица поставщиков
+CREATE TABLE suppliers (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    product_id INTEGER REFERENCES products(id) ON DELETE SET NULL
+);
